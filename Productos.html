@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - Huellitas Pet</title>
+    <title>Productos - Vínculo Veterinario</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo"> Huellitas Pet</div>
+        <div class="logo">Vínculo Veterinario</div>
         <button class="menu-toggle" id="mobile-menu">
             <i class="fas fa-bars"></i>
         </button>
@@ -28,6 +28,18 @@
     </header>
 
     <main id="grid-productos"></main>
+
+    <div id="modal-detalle" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h2 id="modal-nombre"></h2>
+            <p id="modal-categoria"></p>
+            <p>Garantizamos la mejor calidad para el cuidado integral de su mascota.</p>
+            <span id="modal-precio"></span>
+            <a id="btn-whatsapp" href="#" target="_blank" class="btn-ws">Consultar por WhatsApp</a>
+        </div>
+    </div>
 
     <template id="item-producto">
         <article class="producto-card">

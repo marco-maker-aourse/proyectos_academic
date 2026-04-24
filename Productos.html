@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Vínculo Veterinario</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos para el menú -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Vínculo Veterinario</div>
+        
+        <!-- Botón Hamburguesa -->
+        <button class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-menu" id="nav-list">
+            <li><a href="#" onclick="filtrar('Todos')">Todos</a></li>
+            <li><a href="#" onclick="filtrar('Nutrición')">Nutrición</a></li>
+            <li><a href="#" onclick="filtrar('Farmacia')">Farmacia</a></li>
+            <li><a href="#" onclick="filtrar('Accesorios')">Accesorios</a></li>
+        </ul>
+    </nav>
+
+    <header class="tienda-header">
+        <h1>Catálogo Especializado</h1>
+        <p>Calidad médica para el bienestar de su mascota</p>
+    </header>
+
+    <main id="grid-productos"></main>
+
+    <template id="item-producto">
+        <article class="producto-card">
+            <div class="contenedor-imagen">
+                <img src="" alt="" class="producto-img">
+            </div>
+            <div class="producto-cuerpo">
+                <p class="producto-etiqueta"></p>
+                <h3 class="producto-nombre"></h3>
+                <span class="producto-precio"></span>
+                <button class="btn-comprar">Ver detalle</button>
+            </div>
+        </article>
+    </template>
+
+    <script src="Produc.js"></script>
+</body>
+</html>

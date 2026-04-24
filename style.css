@@ -5,13 +5,8 @@
     --blanco: #ffffff;
 }
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: var(--fondo);
-    margin: 0;
-}
+body { font-family: 'Segoe UI', sans-serif; background-color: var(--fondo); margin: 0; }
 
-/* Navbar y Menú Hamburguesa */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -24,33 +19,18 @@ body {
     z-index: 1000;
 }
 
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
+.nav-menu { display: flex; list-style: none; gap: 20px; }
+.nav-menu a { color: white; text-decoration: none; font-weight: 500; cursor: pointer; }
 
-.nav-menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
+.menu-toggle { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
 
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
+.tienda-header { text-align: center; padding: 40px 20px; }
 
-/* Grid de Productos */
 #grid-productos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
-    padding: 40px;
+    padding: 0 40px 40px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -65,15 +45,32 @@ body {
 
 .producto-card:hover { transform: translateY(-10px); }
 
-.contenedor-imagen img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+.contenedor-imagen img { 
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+    background: #eee; 
 }
 
 .producto-cuerpo { padding: 20px; text-align: center; }
+.producto-etiqueta { font-size: 0.8rem; color: var(--detalles); font-weight: bold; text-transform: uppercase; margin: 0; }
+.producto-nombre { margin: 10px 0; color: var(--primario); font-size: 1.2rem; }
+.producto-precio { display: block; font-size: 1.4rem; font-weight: bold; margin-bottom: 15px; color: #27ae60; }
 
-/* Responsive */
+.btn-comprar {
+    background-color: var(--primario);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover { background-color: var(--detalles); }
+
 @media (max-width: 768px) {
     .menu-toggle { display: block; }
     .nav-menu {

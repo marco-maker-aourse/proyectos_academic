@@ -1,83 +1,75 @@
+body { margin: 0; font-family: Arial, sans-serif; }
 
-body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: white;
+}
 
-        /* HEADER */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #2c3e50;
-            padding: 15px 30px;
-            color: white;
-        }
+.logo { font-weight: bold; font-size: 24px; color: #27ae60; }
 
-        nav a {
-            color: white;
-            margin-right: 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav a {
+    color: #333;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+/* SECCIÓN CONTACTO (El Hero) */
+#contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+    background: url('https://escuelaversailles.com/wp-content/uploads/master-en-auxiliar-de-tecnico-de-veterinario.jpg') no-repeat center center/cover;
+    min-height: 80vh;
+    color: white;
+}
 
-        .logo {
-            font-size: 18px;
-            font-weight: bold;
-        }
+.texto-hero { max-width: 50%; }
 
-        /* SECCIONES */
-        section {
-            padding: 60px;
-            text-align: center;
-        }
+/* FORMULARIO */
+.formulario-container {
+    background: rgba(255, 255, 255, 0.95); /* Fondo casi blanco */
+    color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+}
 
-        #inicio {
-            background: #ecf0f1;
-        }
+.formulario-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Importante para que no se salga del contenedor */
+}
 
-        #productos {
-            background: #dfe6e9;
-        }
+.formulario-container button {
+    background: #27ae60;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
 
-        /* CONTACTO */
-        #contacto {
-            background: url('https://escuelaversailles.com/wp-content/uploads/master-en-auxiliar-de-tecnico-de-veterinario.jpg') no-repeat center center/cover;
-            color: white;
-        }
+.formulario-container button:hover { background: #219150; }
 
-        .formulario {
-            background: rgba(0,0,0,0.6);
-            padding: 30px;
-            max-width: 400px;
-            margin: auto;
-            border-radius: 10px;
-        }
+h1{
+    color: crimson;
+    box-shadow: #333;
+    
+}
 
-        .formulario input, 
-        .formulario textarea {
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-        }
 
-        .formulario button {
-            background: #27ae60;
-            color: white;
-            padding: 10px;
-            border: none;
-            width: 100%;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .formulario button:hover {
-            background: #219150;
-        }
+p{
+    color: #27ae60;
+}
 

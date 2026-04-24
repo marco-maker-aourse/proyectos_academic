@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Huellita - Contacto</title>
-    <link rel="stylesheet" href="contacto_style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 
     <section id="contacto">
-        <div class="texto-hero">
-            <h1>Comprometidos con la Salud y Cuidado de tus Mascotas.</h1>
-            <p>Somos un centro veterinario en sintonía con la transformación digital.</p>
+        <div class="info-izquierda">
+            
+            <div class="texto-hero">
+                <h1>Comprometidos con la Salud y Cuidado de tus Mascotas.</h1>
+                <p>Somos un centro veterinario en sintonía con la transformación digital.</p>
+            </div>
+            
+           <div class="mapa-container">
+    <a href="https://www.google.com/maps/search/Las+Violetas,+El+Tambo,+Huancayo" target="_blank" title="Abrir en Google Maps">
+        
+        <div style="pointer-events: none;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.7651817887556!2d-75.22223842526544!3d-12.062544288151525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e9714856f7b19%3A0x67c293796d66e76c!2sLas%20Violetas%2C%20El%20Tambo%2012006!5e0!3m2!1ses-419!2spe!4v1713993264619!5m2!1ses-419!2spe" 
+                width="100%" 
+                height="250" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        
+        <div class="abrir-mapa">📍 Clic aquí para abrir en Google Maps</div>
+    </a>
+</div>
+
         </div>
 
         <div class="formulario-container">
@@ -21,13 +42,33 @@
             <input type="text" id="nombre" placeholder="Nombres y Apellidos*">
             <input type="tel" id="telefono" placeholder="Teléfono*">
             <input type="email" id="correo" placeholder="Correo Electrónico*">
+            
+            <input type="text" id="especie" placeholder="Especie (Ej. Perro, Gato, Loro)*">
             <input type="text" id="servicio" placeholder="¿Qué servicio necesitas?*">
             <button onclick="enviarFormulario()">ENVIAR</button>
         </div>
     </section>
 
+    <footer>
+        <div class="footer-info">
+            <div class="footer-seccion">
+                <h4>Nuestra Ubicación</h4>
+                <p>📍 Las Violetas 362-488, Senati</p>
+                <p>Tambo,Huancayo, Junin, Perú</p>
+            </div>
+            
+            <div class="footer-seccion">
+                <h4>Líneas de Atención</h4>
+                <p>📞 SANIVAÑEZ LAZARO RICHARD ABEL: <strong>924 776 764</strong></p>
+                <p>📞 NOEMI BASTIDAS LAZO: <strong>987 654 321</strong></p>
+                <p>📞 MARCO ANTONIO DE LA CRUZ TAIPE: <strong>912 345 678</strong></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 La Huellita Veterinaria. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
-    <!-- Enlace al script externo -->
     <script src="script_contacto.js"></script>
 </body>
 </html>

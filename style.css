@@ -3,15 +3,11 @@
     --detalles: #3498db;
     --fondo: #f8f9fa;
     --blanco: #ffffff;
+    --verde-ws: #25d366;
 }
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: var(--fondo);
-    margin: 0;
-}
+body { font-family: 'Segoe UI', sans-serif; background-color: var(--fondo); margin: 0; }
 
-/* Navbar y Menú Hamburguesa */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -24,28 +20,10 @@ body {
     z-index: 1000;
 }
 
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
+.nav-menu { display: flex; list-style: none; gap: 20px; }
+.nav-menu a { color: white; text-decoration: none; font-weight: 500; cursor: pointer; }
+.menu-toggle { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
 
-.nav-menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-/* Grid de Productos */
 #grid-productos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -60,29 +38,60 @@ body {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    transition: 0.3s;
+    text-align: center;
 }
 
-.producto-card:hover { transform: translateY(-10px); }
+.contenedor-imagen img { width: 100%; height: 200px; object-fit: cover; background: #eee; }
+.producto-cuerpo { padding: 20px; }
+.producto-precio { display: block; font-size: 1.3rem; font-weight: bold; margin: 10px 0; color: #27ae60; }
 
-.contenedor-imagen img {
+.btn-comprar, .btn-ws {
+    background-color: var(--primario);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.producto-cuerpo { padding: 20px; text-align: center; }
+.btn-ws { background-color: var(--verde-ws); margin-top: 15px; }
 
-/* Responsive */
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-contenido {
+    background-color: white;
+    margin: 5% auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.cerrar-modal { position: absolute; right: 20px; top: 10px; font-size: 30px; cursor: pointer; }
+
+#modal-img { width: 100%; height: 200px; object-fit: contain; }
+
 @media (max-width: 768px) {
     .menu-toggle { display: block; }
     .nav-menu {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
+        top: 60px; left: 0; width: 100%;
         background: var(--primario);
         padding: 20px;
     }

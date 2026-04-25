@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Huellitas Vet</title>
+    <meta name="description" content="Productos veterinarios para nutricion, higiene, farmacia y accesorios en Huellitas Vet.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Ir al inicio de Huellitas Vet">
+                <img src="img/logopet.png" alt="Logo de Huellitas Vet">
+                <div>
+                    <span class="brand-name">Huellitas Vet</span>
+                    <span class="brand-copy">Clinica veterinaria para el cuidado diario</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="mobile-menu" type="button" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="nav-list">
+                <a href="index.html">Inicio</a>
+                <a href="Servicios.html">Servicios</a>
+                <a href="Productos.html">Productos</a>
+                <a href="contactos.html">Contacto</a>
+                <a class="nav-cta" href="contactos.html">Reservar cita</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="products-page">
+        <section class="products-hero">
+            <div class="container products-hero-grid">
+                <div class="products-copy">
+                    <span class="eyebrow">Tienda veterinaria</span>
+                    <h1>Productos seleccionados para acompanar nutricion, higiene y bienestar.</h1>
+                    <p>
+                        Reunimos opciones utiles para complementar la atencion clinica con una vitrina clara,
+                        ordenada y enfocada en las necesidades reales de cada mascota.
+                    </p>
+                </div>
+
+                <div class="products-highlight">
+                    <img src="img/alim.png" alt="Producto destacado de nutricion">
+                    <div>
+                        <span class="highlight-label">Recomendacion destacada</span>
+                        <h2>Alternativas pensadas para cuidado diario y apoyo preventivo.</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="container">
+                <div class="catalog-toolbar">
+                    <div>
+                        <span class="eyebrow">Catalogo</span>
+                        <h2>Explora por categoria y revisa cada detalle con facilidad.</h2>
+                    </div>
+
+                    <div class="filters" aria-label="Filtros de productos">
+                        <button class="filter-btn active" type="button" data-filter="Todos">Todos</button>
+                        <button class="filter-btn" type="button" data-filter="Nutricion">Nutricion</button>
+                        <button class="filter-btn" type="button" data-filter="Farmacia">Farmacia</button>
+                        <button class="filter-btn" type="button" data-filter="Accesorios">Accesorios</button>
+                    </div>
+                </div>
+
+                <div id="grid-productos" class="products-grid-page"></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-detalle" class="modal" aria-hidden="true">
+        <div class="modal-contenido">
+            <button class="cerrar-modal" type="button" aria-label="Cerrar detalle">&times;</button>
+            <img id="modal-img" src="" alt="Imagen del producto">
+            <div class="modal-copy">
+                <p id="modal-categoria" class="modal-tag"></p>
+                <h2 id="modal-nombre"></h2>
+                <p id="modal-descripcion">
+                    Seleccion pensada para complementar la rutina de cuidado, comodidad y bienestar de tu mascota.
+                </p>
+                <span id="modal-precio" class="modal-precio"></span>
+                <a id="btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    Consultar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <template id="item-producto">
+        <article class="product-card-page">
+            <div class="product-image-wrap">
+                <img src="" alt="" class="producto-img">
+            </div>
+            <div class="product-copy">
+                <p class="producto-etiqueta"></p>
+                <h3 class="producto-nombre"></h3>
+                <p class="producto-descripcion"></p>
+                <div class="product-card-footer">
+                    <span class="producto-precio"></span>
+                    <button class="btn-comprar" type="button">Ver detalle</button>
+                </div>
+            </div>
+        </article>
+    </template>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <h3>Huellitas Vet</h3>
+                <p>Productos y atencion veterinaria para fortalecer la salud diaria de tu mascota.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="Servicios.html">Servicios</a>
+                <a href="Productos.html">Productos</a>
+                <a href="contactos.html">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

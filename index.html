@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas Vet | Cuidado veterinario cercano y profesional</title>
+    <meta name="description" content="Atencion veterinaria integral para perros y gatos con consultas, vacunacion, cirugias y cuidados preventivos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="inicio">
+        <div class="container header-inner">
+            <a class="brand" href="#inicio" aria-label="Ir al inicio de Huellitas Vet">
+                <img src="img/logopet.png" alt="Logo de Huellitas Vet">
+                <div>
+                    <span class="brand-name">Huellitas Vet</span>
+                    <span class="brand-copy">Clinica veterinaria para el cuidado diario</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="mobile-menu" type="button" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="nav-list">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
+                <a class="nav-cta" href="contactos.html">Reservar cita</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Bienestar veterinario con calidez humana</span>
+                    <h1>Cuidamos cada etapa de la vida de tu mascota con atencion clara, moderna y confiable.</h1>
+                    <p>
+                        En Huellitas Vet combinamos consultas, vacunacion, cirugias y seguimiento preventivo
+                        para que perros y gatos reciban un cuidado completo en un entorno seguro.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="contactos.html">Agendar cita</a>
+                        <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <article>
+                            <strong>Atencion integral</strong>
+                            <span>Consulta, control y seguimiento en un solo lugar.</span>
+                        </article>
+                        <article>
+                            <strong>Equipo preparado</strong>
+                            <span>Profesionales enfocados en prevencion y tratamiento.</span>
+                        </article>
+                        <article>
+                            <strong>Ambiente cercano</strong>
+                            <span>Espacios pensados para reducir el estres de cada visita.</span>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="hero-showcase">
+                    <div class="carousel">
+                        <div class="slide active">
+                            <img src="img/perrito.webp" alt="Perro recibiendo atencion veterinaria">
+                            <div class="slide-overlay">
+                                <span>Consulta general</span>
+                                <h2>Revision oportuna para mantener a tu mascota sana.</h2>
+                                <p>Evaluamos sintomas, prevencion y recomendaciones de cuidado diario.</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/pets.jpg" alt="Mascotas en revision clinica">
+                            <div class="slide-overlay">
+                                <span>Vacunacion y control</span>
+                                <h2>Protocolos preventivos adaptados a cada etapa.</h2>
+                                <p>Organizamos controles y vacunas para fortalecer su bienestar.</p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <img src="img/pets.webp" alt="Mascotas felices en la veterinaria">
+                            <div class="slide-overlay">
+                                <span>Cuidado con confianza</span>
+                                <h2>Un espacio pensado para acompañarte en cada decision.</h2>
+                                <p>Orientacion clara, trato amable y seguimiento responsable.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-controls">
+                            <button class="prev" type="button" aria-label="Imagen anterior">&#10094;</button>
+                            <button class="next" type="button" aria-label="Imagen siguiente">&#10095;</button>
+                        </div>
+
+                        <div class="carousel-dots" id="carousel-dots" aria-label="Indicadores del carrusel"></div>
+                    </div>
+
+                    <aside class="hero-panel">
+                        <p class="panel-label">Atencion destacada</p>
+                        <h3>Consulta preventiva para detectar a tiempo cualquier cambio en su salud.</h3>
+                        <p>
+                            Revisiones periodicas, orientacion nutricional y planes de cuidado que ayudan
+                            a mantener una vida activa y equilibrada.
+                        </p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="servicios">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Servicios principales</span>
+                    <h2>Soluciones veterinarias claras para el cuidado diario y especializado.</h2>
+                    <p>
+                        Trabajamos con procesos ordenados para ofrecer diagnostico, tratamiento y prevencion
+                        con una experiencia comoda para cada familia.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <img class="service-image" src="img/perrito.webp" alt="Consulta veterinaria para perro">
+                        <div class="service-icon">01</div>
+                        <h3>Consulta general</h3>
+                        <p>Evaluacion clinica completa para detectar necesidades de salud y orientar el siguiente paso.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <img class="service-image" src="img/vacuna.png" alt="Proceso de vacunacion veterinaria">
+                        <div class="service-icon">02</div>
+                        <h3>Vacunacion</h3>
+                        <p>Esquemas preventivos segun edad, estilo de vida y antecedentes de cada mascota.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <img class="service-image" src="img/cirugia.webp" alt="Preparacion de cirugia veterinaria">
+                        <div class="service-icon">03</div>
+                        <h3>Cirugias</h3>
+                        <p>Procedimientos con seguimiento responsable antes, durante y despues de la intervencion.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <img class="service-image" src="img/groomin.jpg" alt="Servicio de grooming para mascotas">
+                        <div class="service-icon">04</div>
+                        <h3>Grooming</h3>
+                        <p>Bano, higiene y cuidado estetico para reforzar confort, limpieza y bienestar.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section" id="productos">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Productos recomendados</span>
+                    <h2>Una seleccion pensada para nutricion, higiene, paseo y entretenimiento.</h2>
+                    <p>
+                        Complementamos la atencion veterinaria con productos utiles para fortalecer el cuidado
+                        diario, la comodidad y la rutina saludable de cada mascota.
+                    </p>
+                </div>
+
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img src="img/alim.png" alt="Alimento premium para mascotas">
+                        <div class="product-copy">
+                            <h3>Alimento premium</h3>
+                            <p>Nutricion balanceada para apoyar energia, digestion y vitalidad.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/aliment1.jpg" alt="Presentacion de alimento para mascotas">
+                        <div class="product-copy">
+                            <h3>Formula de mantenimiento</h3>
+                            <p>Opcion ideal para rutinas estables con enfoque en bienestar diario.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/aliment2.jpg" alt="Bolsa de alimento para perros y gatos">
+                        <div class="product-copy">
+                            <h3>Nutricion completa</h3>
+                            <p>Apoyo alimenticio para acompanar distintas etapas de crecimiento.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/arnes.jpg" alt="Arnes de paseo para mascota">
+                        <div class="product-copy">
+                            <h3>Arnes de paseo</h3>
+                            <p>Comodidad y mejor control para caminatas seguras y tranquilas.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/higene.jpg" alt="Kit de higiene para mascotas">
+                        <div class="product-copy">
+                            <h3>Kit de higiene</h3>
+                            <p>Elementos practicos para mantener limpieza y cuidado cotidiano.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/famac1.png" alt="Producto de farmacia veterinaria">
+                        <div class="product-copy">
+                            <h3>Cuidado dermatologico</h3>
+                            <p>Apoyo para rutinas de higiene y bienestar de piel y pelaje.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/farmac2.jpg" alt="Shampoo medicado para mascotas">
+                        <div class="product-copy">
+                            <h3>Shampoo medicado</h3>
+                            <p>Alternativa especializada para reforzar limpieza y cuidado externo.</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/juegete.png" alt="Juguete para entretenimiento de mascotas">
+                        <div class="product-copy">
+                            <h3>Juguete interactivo</h3>
+                            <p>Estimulo y entretenimiento para apoyar actividad y bienestar emocional.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-strip" id="contacto">
+            <div class="container contact-strip-inner">
+                <div>
+                    <span class="eyebrow">Reserva tu visita</span>
+                    <h2>Haz que su proxima consulta sea comoda, ordenada y bien acompañada.</h2>
+                </div>
+                <div class="contact-actions">
+                    <a class="btn btn-primary" href="contactos.html">Ir a contacto</a>
+                    <a class="btn btn-secondary" href="Servicios.html">Explorar servicios</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <h3>Huellitas Vet</h3>
+                <p>Cuidado veterinario integral para proteger la salud y el bienestar de tu mascota.</p>
+            </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#productos">Productos</a>
+                    <a href="contactos.html">Contacto</a>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
